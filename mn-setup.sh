@@ -266,6 +266,14 @@ bind=${IP}:44221
 masternodeaddr=${IP}
 masternodeprivkey=${KEY}
 masternode=1
+addnode=185.62.81.131
+addnode=185.62.81.132
+addnode=185.62.81.133
+addnode=185.62.81.134
+addnode=185.62.81.135
+addnode=185.62.81.136
+addnode=185.62.81.137
+addnode=94.199.213.177
 EOL
 chmod 0600 $USERHOME/.cryptonodes/cryptonodes.conf
 chown -R $USER:$USER $USERHOME/.cryptonodes
