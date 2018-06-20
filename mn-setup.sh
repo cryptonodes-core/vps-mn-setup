@@ -83,11 +83,11 @@ set -- "${POSITIONAL[@]}" # restore positional parameters
 clear
 
 # Set these to change the version of Cryptonodes to install
-TARBALLURL="https://github.com/cryptonodes-core/cryptonodes-core/releases/download/v.1.2.0.2/cryptonodes-x86_64-linux-gnu.tar.gz"
+TARBALLURL="https://github.com/cryptonodes-core/cryptonodes-core/releases/download/v.1.3.0.0/cryptonodes-x86_64-linux-gnu.tar.gz"
 TARBALLNAME="cryptonodes-x86_64-linux-gnu.tar.gz"
 BOOTSTRAPURL=""
 BOOTSTRAPARCHIVE=""
-CNMCVERSION="1.2.0.2"
+CNMCVERSION="1.3.0.0"
 
 #!/bin/bash
 
@@ -228,7 +228,7 @@ if [[ ("$UFW" == "y" || "$UFW" == "Y" || "$UFW" == "") ]]; then
   ufw default deny incoming
   ufw default allow outgoing
   ufw allow ssh
-  ufw allow 44221/tcp
+  ufw allow 44219/tcp
   yes | ufw enable
 fi
 
@@ -262,7 +262,7 @@ daemon=1
 logtimestamps=1
 maxconnections=256
 externalip=${IP}
-bind=${IP}:44221
+bind=${IP}:44219
 masternodeaddr=${IP}
 masternodeprivkey=${KEY}
 masternode=1
