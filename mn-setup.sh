@@ -97,12 +97,6 @@ if [ "$(id -u)" != "0" ]; then
    exit 1
 fi
 
-# Check if we have enough memory
-if [[ `free -m | awk '/^Mem:/{print $2}'` -lt 850 ]]; then
-  echo "This installation requires at least 1GB of RAM.";
-  exit 1
-fi
-
 # Check if we have enough disk space
 if [[ `df -k --output=avail / | tail -n1` -lt 10485760 ]]; then
   echo "This installation requires at least 10GB of free disk space.";
