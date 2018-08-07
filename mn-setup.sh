@@ -83,11 +83,11 @@ set -- "${POSITIONAL[@]}" # restore positional parameters
 clear
 
 # Set these to change the version of Cryptonodes to install
-TARBALLURL="https://github.com/cryptonodes-core/cryptonodes-core/releases/download/v1.3.0.0/cryptonodes-x86_64-linux-gnu.tar.gz"
+TARBALLURL="https://github.com/cryptonodes-core/cryptonodes-core/releases/download/v1.3.1.0/cryptonodes-x86_64-linux-gnu.tar.gz"
 TARBALLNAME="cryptonodes-x86_64-linux-gnu.tar.gz"
 BOOTSTRAPURL=""
 BOOTSTRAPARCHIVE=""
-CNMCVERSION="1.3.0.0"
+CNMCVERSION="1.3.1.0"
 
 #!/bin/bash
 
@@ -95,6 +95,12 @@ CNMCVERSION="1.3.0.0"
 if [ "$(id -u)" != "0" ]; then
    echo "This script must be run as root." 1>&2
    exit 1
+fi
+
+# Check if we have enough memory
+if [[ `free -m | awk '/^Mem:/{print $2}'` -lt 850 ]]; then
+  echo "This installation requires at least 1GB of RAM.";
+  exit 1
 fi
 
 # Check if we have enough disk space
