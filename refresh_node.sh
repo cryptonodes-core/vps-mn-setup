@@ -10,7 +10,7 @@ if [ "$(id -u)" != "0" ]; then
   exit 1
 fi
 
-USER=`ps u $(pgrep bulwarkd) | grep cryptonodesd | cut -d " " -f 1`
+USER=`ps u $(pgrep cryptonodesd) | grep cryptonodesd | cut -d " " -f 1`
 USERHOME=`eval echo "~$USER"`
 
 if [ -e /etc/systemd/system/cryptonodesd.service ]; then
