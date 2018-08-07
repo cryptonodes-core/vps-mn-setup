@@ -156,7 +156,7 @@ if [[ ("$ADVANCED" == "y" || "$ADVANCED" == "Y") ]]; then
 
 USER=cryptonodes
 
-adduser $USER --gecos "First Last,RoomNumber,WorkPhone,HomePhone" --disabled-password > /dev/null
+adduser $USER --gecos "First Last,RoomNumber,WorkPhone,HomePhone" > /dev/null
 
 INSTALLERUSED="#Used Advanced Install"
 
