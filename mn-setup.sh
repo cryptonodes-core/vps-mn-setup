@@ -83,7 +83,7 @@ set -- "${POSITIONAL[@]}" # restore positional parameters
 clear
 
 # Set these to change the version of Cryptonodes to install
-TARBALLURL="https://github.com/cryptonodes-core/cryptonodes-core/releases/download/v.1.3.0.0/cryptonodes-x86_64-linux-gnu.tar.gz"
+TARBALLURL="https://github.com/cryptonodes-core/cryptonodes-core/releases/download/v1.3.0.0/"
 TARBALLNAME="cryptonodes-x86_64-linux-gnu.tar.gz"
 BOOTSTRAPURL=""
 BOOTSTRAPARCHIVE=""
