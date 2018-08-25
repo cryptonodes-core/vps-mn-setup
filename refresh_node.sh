@@ -16,7 +16,7 @@ USERHOME=`eval echo "~$USER"`
 if [ -e /etc/systemd/system/cryptonodesd.service ]; then
   systemctl stop cryptonodesd
 else
-  su -c "cryptonodes-cli stop" $BWKUSER
+  su -c "cryptonodes-cli stop" $CNMCUSER
 fi
 
 echo "Refreshing CNMC node, please wait."
