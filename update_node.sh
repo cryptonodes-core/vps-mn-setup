@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TARBALLURL="https://github.com/cryptonodes-core/cryptonodes-core/releases/download/v1.3.2.0/cryptonodes-x86_64-linux-gnu.tar.gz"
+TARBALLURL="https://github.com/cryptonodes-core/cryptonodes-core/releases/download/v1.3.2.0/cryptonodes-1.3.2-x86_64-linux-gnu.tar.gz"
 TARBALLNAME="cryptonodes-1.3.2-x86_64-linux-gnu.tar.gz"
 CNMCVERSION="1.3.2.0"
 
