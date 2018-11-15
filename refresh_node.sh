@@ -27,6 +27,8 @@ rm -rf $USERHOME/.cryptonodes/blocks
 rm -rf $USERHOME/.cryptonodes/database
 rm -rf $USERHOME/.cryptonodes/chainstate
 rm -rf $USERHOME/.cryptonodes/sporks
+rm -rf $USERHOME/.cryptonodes/mncache.dat
+rm -rf $USERHOME/.cryptonodes/mnpayments.dat
 rm -rf $USERHOME/.cryptonodes/peers.dat
 
 cp $USERHOME/.cryptonodes/cryptonodes.conf $USERHOME/.cryptonodes/cryptonodes.conf.backup
